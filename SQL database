@@ -1,0 +1,25 @@
+create table Fornecedor(
+Fcodigo number(3) primary key,
+nome char(15),
+status number(2),
+cidade char(15)
+)
+create table Peça(
+Pcodigo number(3) primary key,
+nome char(15),
+cor number(10),
+peso number(3),
+cidade char(15)
+)
+create table Projeto(
+Jcodigo number(2) primary key,
+nome char(15),
+cidade number(15)
+)
+CREATE TABLE Fornecimento
+  (
+  Fcodigo number(2),
+  Pcodigo number(2),
+  Jcodigo number(2),
+  Quantidade number (3)
+  )
