@@ -22,4 +22,7 @@ CREATE TABLE Fornecimento
   Pcodigo number(2),
   Jcodigo number(2),
   Quantidade number (3)
+foreign key (Fcodigo) references Fornecedores(Fcodigo),
+foreign key (Pcodigo) references Peca(Pcodigo),
+foreign key (Jcodigo) references Projeto(Jcodigo)
   )
