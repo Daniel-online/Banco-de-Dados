@@ -1,0 +1,32 @@
+
+create table ATOR
+(
+CodAtor number(3) primary key,
+NomeArtistico varchar(20),
+NomeReal varchar(20),
+Nacionalidade varchar(20),
+Sexo varchar(20),
+Idade number(3),
+IndicacaoOscas number(3),
+Oscar varchar(20)
+)
+create table FILME
+(
+CodFilme number(3) primary key,
+NomeFilme varchar(20),
+AnoFilme varchar(20),
+Orcamento varchar(20),
+Tempo varchar(20)
+
+)
+
+create table PERSONAGEM
+(
+CodFilme number(3),
+CodAtor number(3),
+Personagem varchar(20),
+Cache number(4),
+foreign key (CodFilme) references FILME(CodFilme),
+foreign key (CodAtor) references ATOR(CodAtor)
+
+)
