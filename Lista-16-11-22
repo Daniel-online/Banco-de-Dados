@@ -1,0 +1,63 @@
+/exercicio 1
+select   sexo  , nome 
+
+from alunos
+
+where sexo='M'
+
+
+
+/exercicio 2
+select nome 
+
+from professores
+
+where codprof='1'
+
+
+
+/exercicio 3
+select CARGAHORARIA, nome
+
+from disciplinas
+
+where CARGAHORARIA>=60
+
+
+
+/exercicio 4
+select qtd_creditos, nome
+
+from disciplinas
+
+where QTD_CREDITOS not between 4 and 6
+
+
+/exercicio 5
+select  codprof, nome, coddepto
+from professores
+where nome= 'ZE'
+
+/exercicio 6
+select nome
+from professores
+order by nome
+
+/exercicio 7
+select nome apelido, CARGAHORARIA hora, coddepto seção
+FROM DISCIPLINAS
+where QTD_CREDITOS>=3 AND coddepto=10
+
+/exercicio 8
+select nome, sexo, dat_nasc
+from alunos
+where dat_nasc between '01/01/1990' and '01/01/2000'
+
+/ exercicio 9
+select matricula
+from diarios
+where av3>9 and av1<5
+/exercicio 10
+select matricula, codturma
+from diarios
+order by codturma asc, matricula asc
