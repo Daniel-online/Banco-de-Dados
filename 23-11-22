@@ -1,0 +1,32 @@
+//exercicio 1
+select sysdate Data
+from DUAL
+
+
+//exercicio 2
+select nome, dat_nasc, sexo, trunc((sysdate - dat_nasc) / 365)
+from alunos
+
+
+////exercicio 3
+select nome,cargahoraria, (cargahoraria * 1.2) nova_ch, (cargahoraria - (cargahoraria*1.2)) incremento
+from disciplinas
+
+//exercicio 4
+select initcap(nome)
+from professores
+
+//exercicio 5
+select lower(nome)
+from professores
+order by nome desc
+
+
+//exercicio  6
+select initcap(nome)
+from alunos
+order by 1 desc
+
+//exercicio 7
+select initcap(nome)
+from alunos
